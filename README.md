@@ -1,44 +1,41 @@
 # Regression Assignment: Bike Sharing
 
->required to model the demand for shared bikes with the available independent variables. It will be used by the management to understand how exactly the demands vary with different features. They can accordingly manipulate the business strategy to meet the demand levels and meet the customer's expectations. Further, the model will be a good way for management to understand the demand dynamics of a new market. 
->Which variables are significant in predicting the demand for shared bikes.
->How well those variables describe the bike demands
+>The objective is to model the demand for shared bikes
+with the available independent variables. It will be used by the management
+to understand how exactly the demands vary with different features. They can
+accordingly manipulate the business strategy to meet the demand levels and
+meet the customer's expectations. Further, the model will be a good way for
+management to understand the demand dynamics of a new market. 
+- Which variables are significant in predicting the demand for shared bikes.
+- How well those variables describe the bike demands
 
 
 ## Table of Contents
-* [About Lending Club](#about-lending-club)
+* [About Boom Bikes](#about-boom-bikes)
+* [Summary](#summary)
 * [Technologies Used](#technologies-used)
-* [Recommendations](#recommendations)
 * [Contact](#contact)
 
 
 <!-- You can include any other section that is pertinent to your problem -->
 
-## About Lending Club
-- Lending Club is the largest online loan marketplace, facilitating personal loans, business loans and financing of medical procedures. Borrowers can easily access lower interest rate loans through a fast online interface.
-
-- Like most other lending companies, lending loans to ‘risky’ applicants is the largest source of financial loss (called credit loss). Credit loss is the amount of money lost by the lender when the borrower refuses to pay or runs away with the money owed. In other words, borrowers who default cause the largest amount of loss to the lenders. In this case, the customers labelled as 'charged-off' are the 'defaulters'. 
-
-- In other words, the company wants to understand the driving factors behind loan default, i.e. the variables which are strong indicators of default.  The company can utilize this knowledge for its portfolio and risk assessment. 
-
-- Dataset contains the complete loan data for all loans issued through the time period 2007 t0 2011.
+## About Boom Bikes
+- A bike-sharing system in which bikes are made available for shared use to individuals on a short term basis
+for a price or free. It allow people to borrow a bike from a "dock" which is usually computer-controlled
+wherein the user enters the payment information, and the system unlocks it. This bike can then be returned
+to another dock belonging to the same system.
 
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
-## Recommendations
-- Interest rate on higher tenure (60 months) loans has to be reduced further to control the default rate
-- Strong correlation has been observed between public derogatory and public bankruptcies. Lending club
-should not give any loans to customers with public derogatory records
-- Loans given to Small business are tend to default more. LC should reduce or not give loan to this
-segment
-- Lower the grades, higher the proportion of charged off customers. Take more information and actions
-before issuing loans to lower grade category
-- Mortgage home ownership are taking higher amount of loan and becoming default. Set the range for this
-category and limit to max 15k USD
-- Lending club stop giving loan to NE and take extra caution while providing loans to CA, FL and NY
-cities
-- Higher the interest rate more the charged off customers. Take action on fixing the interest rate for
-different category of loans
+## Summary
+- After comparing results between train and test data, the trained model can able to generalize the unseen data very well with only consideration of 8 variables
+- Top 3 predictor variables that influences the bike booking:
+  - atemp: A unit increase in feeling temp variable, increases the bike rides by 0.378637 units.
+  - weathersit_3: A unit increase in weathersit_3 variable, increases the bike rides by 0.284695 units.
+        - weathersit_3: (Light Snow, Light Rain + Thunderstorm + Scattered clouds, Light Rain + Scattered clouds)
+  - yr_2019: A unit increase in yr_2019 variable, increases the bike rides by 0.253157 units.
+- It is suggested to consider these variables utmost importance while planning, to achive maximum Booking
+- In Jan and Feb we can suggest to service the bikes, with out much impacting the business
 
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
